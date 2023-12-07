@@ -1,0 +1,1013 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:white;
+    border: 0.188rem solid;
+    border-color: rgb(45 157 254);
+    box-shadow:0.313rem 0.25rem 0.125rem lightblue;
+    position: sticky;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.body{
+    width:100%;
+}
+
+.Logo{
+    box-shadow:0.625rem 0.625rem 0.625rem rgb(241, 185, 185);
+    margin:0.625rem;
+  }
+
+
+.icons{
+   margin-top:2.813rem;
+   display:flex;
+}
+
+.cart-icon{
+    margin-right: 1.875rem;
+}
+
+.Login-icon{
+    margin-right: 0.625rem;
+}
+
+.search-box{
+    margin-top: 2.813rem;
+}
+
+.search-box input:focus{
+    width:400px;
+}
+
+.main-nav{
+    text-align: right;
+}
+
+.main-nav ul li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.main-nav ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background:red;
+    display:block;
+    margin:auto;
+    transition: 0.8s;
+}
+
+.main-nav ul li:hover::after{
+    width:100%;
+}
+
+.page-banner{
+    border:1px solid blueviolet;
+    padding-bottom: 20px;
+ 
+    background-color: #000;
+}
+
+.page-banner-content h2{
+    font-size: 2.813rem;
+    text-align: center;
+    color:black;
+    font-family: 'Lato', sans-serif;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313px;
+    animation-name: color-fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes color-fade{
+    from{
+        color:black;
+        
+    }
+    to{
+        color:red;
+    }
+}
+
+
+.shop-link{
+    border:1px solid white;
+    font-size: 1.25rem;
+    padding:0.313rem;
+    color:white;
+    text-decoration: none;
+    margin-left: 56.25rem;
+    margin-bottom: 31.25rem;
+    font-weight: bold;
+}
+
+.shop-link:hover{
+    border:1px solid white;
+    background: red;
+    transition: 0.5s;
+}
+.off{
+    width:50px;
+    height:50px;
+    background-color:rgb(45 157 254 0.8);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    position:absolute; 
+    top:50%;
+    left:47%;
+    z-index:2
+}
+
+.navigation a{
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    border: 1.5px solid;
+    border-color:red;
+    word-spacing: 5px;
+    font-weight: 400;
+    font-size:small;
+    padding:5px;
+}
+
+.nav-button:hover{
+    background-color: red;
+}
+
+.newarrivals{
+    color:gray;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 1.563rem;
+    text-align: left;
+}
+
+.new-arrivals{
+    display:flex;
+    justify-content: space-between 15px;
+}
+
+.new-arrivals img{
+    width:31.25rem;
+    height:12.5rem;
+    padding:1.25rem;
+    margin-left: 2.875px;
+}
+
+.middle-content {
+padding: 30px 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+
+.middle-content-para1{
+font-weight: bold;
+font-size: 1.5rem;
+color: black;
+text-align: center;
+}
+
+.middle-content-image2 p{
+color:black;
+font-weight: bold;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.middle-content-image1 img, .middle-content-image2 img{
+width:35rem;
+padding-left: 12px;
+}
+
+.trendingnow{
+    color:red;
+    font-weight: bold;
+    font-size: 1.563rem;
+    margin-right: 62.5rem;
+}
+
+.trending-images{
+    display:flex;
+    justify-content: space-between 10px;
+}
+
+.trending-images img{
+    width:30rem;
+    height:20rem;
+    padding:10px;
+    
+   
+}
+
+
+footer{
+    background-color: black;
+  }
+
+
+footer a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a:visited {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color:lightgreen;
+  }
+  
+  footer a:active {
+    text-decoration: underline;
+    
+  }
+
+
+footer nav li{
+list-style:none ;
+word-spacing: 2px;
+}
+
+nav.left li{
+margin-left: 100px;
+}
+
+.footer-navigation{
+display: flex;
+align-items: end;
+justify-content: space-between;
+}
+
+.shop-link{
+    display: inline;
+}
+
+#fbclick, #igclick{
+    padding-right: 0.625rem;
+}
+
+  /* For Extra Small devices*/
+
+  @media only screen and (max-width: 768px) {
+    .search-box input:focus{
+        width:8rem;
+    }
+
+    .shop-link{
+        font-size: 0.8rem;
+        padding:0.313rem;
+        color:white;
+        text-decoration: none;
+         }
+
+    .page-banner-content h2{
+        font-size: 1.8rem;
+        text-align: center;
+        color:white;
+        margin-top: 3.5rem;
+       
+       
+    }
+
+    .newarrivals{
+        color:black;
+        padding-left: 15px;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .new-arrivals img{
+        width:15rem;
+        height:11rem;
+        padding:0.625rem;
+        margin-left: 3rem;
+        padding-left: 5rem;
+    }
+  
+    .new-arrivals{
+        display:flex;
+      flex-direction: column;
+    }
+
+    .middle-content {
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        }
+
+    .trendingnow{
+        color:red;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-right: 20rem;
+         }
+
+    .trending-images{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between 10px;
+        }   
+
+    .trending-images img{
+        width:30rem;
+        height:25rem;
+        padding:3rem;
+        }
+
+
+
+
+.modal-content input[type=text], input[type=password] {
+    width: 20rem;
+    padding: 0.75rem 1.25rem;
+    margin: 0.2 0;
+   }
+
+
+
+#createbtn{
+
+  width: 10rem;
+ 
+    }
+
+.modal h5{
+    font-size: 0.5rem;
+    }
+
+.modal h2{
+    font-size: 1rem;
+    }
+
+.modal{
+    
+    
+    position:static;
+   
+     width:10rem;
+    height: 15rem;
+
+    }
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+  }
+
+/*------------Box-Modal-content--------------*/
+
+
+/*------------Modal-1---------------------*/
+.modal-content input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+#logbtn{
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 320px;
+  border: none;
+  cursor: pointer;
+  
+
+}
+
+#logbtn:hover {
+  opacity: 1s;
+  color:black;
+  background-color: gray;
+}
+
+
+#createbtn{
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  margin-left:260px;
+ 
+}
+
+
+#createbtn:hover{
+  opacity: 1s;
+  color:black;
+  background-color: gray;
+
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content p{
+    text-align: center;
+    margin-bottom: 35px;
+    text-decoration: underline;
+}
+
+.modal-content a{
+    margin-left: 390px;
+    word-spacing:6px;
+    
+}
+
+.modal h5{
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+.modal h2{
+   margin-left: 5px;
+
+}
+
+.modal{
+  display: none; 
+  position: fixed; 
+  border:2px solid black;
+  background-color: lightgrey;
+  padding:20px; 
+  left: 500px;
+  top: 100px;
+  width:fit-content;
+  height: 420px;
+
+}
+
+/*------------Modal-2---------------------*/
+
+.modal2-content input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+#registerbtn{
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 260px;
+    border: none;
+    cursor: pointer;
+}
+
+#registerbtn:hover {
+  opacity: 1s;
+  color:black;
+  background-color: gray;
+}         
+
+.modal2{
+  display: none; 
+  position: fixed;
+  border:2px solid black;
+  background-color: lightgray;
+  padding:20px;  
+  left: 500px;
+  top: 100px;
+  width: 650px; 
+  height: 400px; 
+}
+
+.exit {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.exit:hover,
+.exit:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*------------Modal-3---------------------*/
+
+.modal3-content input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.fb{
+    color:rgb(24 119 242);
+    font-size: 23px;
+}
+
+#logbtn3{
+  background-color:rgb(24 119 242);
+  color: white;
+  padding:10px 95px 10px 95px;
+  margin: 8px 0;
+  margin-left: 180px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+#logbtn3:hover {
+  opacity: 1s;
+  background-color: black;
+}
+
+
+#createbtn3{
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+  
+  #createbtn3:hover{
+    opacity: 1s;
+    color:black;
+    background-color: gray;
+  
+  }
+
+.modal3-content p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.modal3{
+
+  position: fixed; 
+  border:2px solid black;
+  background-color: lightgrey;
+  padding:20px; 
+  left: 500px;
+  top: 100px;
+  width: 550px; 
+  height: 390px; 
+}
+
+.cross {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cross:hover,
+  .cross:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*------------Modal-4---------------------*/
+
+  .modal4-content input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.IG{
+    color:darkmagenta;
+    font-size: 23px;
+}
+
+.btn-login{
+  background-color:rgb(24 119 242);
+  color: white;
+  padding:10px 95px 10px 95px;
+  margin: 8px 0;
+  margin-left: 180px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+.btn-login:hover {
+  opacity: 1s;
+  background-color: black;
+}
+
+.btn-create{
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+  
+  .btn-create:hover{
+    opacity: 1s;
+    color:black;
+    background-color: gray;
+  
+  }
+
+  .modal4-content p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.modal4{
+
+  position: fixed;
+  border:2px solid black;
+  background-color: lightgrey;
+  padding:20px; 
+  left: 500px;
+  top: 100px;
+  width: 550px; 
+  height: 390px; 
+}
+
+
+.stop {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .stop:hover,
+  .stop:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/*------------Men-content--------------*/
+
+
+.men-page-banner{
+ padding-right:5px;
+
+}
+
+.man-section1-pics,  .man-section2-pics,  .man-section3-pics{
+    display:flex;
+}
+
+.men-pic1-details{
+   margin-left:25px;
+   margin-top: 30px;
+}
+
+.men-pic2-details, .men-pic3-details{
+    margin-left: 25px;
+
+}
+
+.men-pic1-details p,.men-pic2-details p, .men-pic3-details p{
+    text-align: center;
+}
+
+.men-pic1-details img, .men-pic2-details img, .men-pic3-details img {
+    width:95%;
+    height:55%;
+}
+
+  .add-to-cart img{
+    width:30%;
+    height:15%;
+    margin-left: 30%;
+}
+
+/*------------Women-content--------------*/
+
+.women-page-banner{
+   padding-left: 5px;
+}
+
+.women-section1-pics,  .women-section2-pics,  .women-section3-pics{
+    display:flex;
+}
+
+.women-pic1-details, .women-pic2-details, .women-pic3-details{
+   margin:50px;
+}
+
+.women-pic1-details p,.women-pic2-detailsp, .women-pic3-details p{
+    text-align: center;
+}
+
+.women-pic1-details img, .women-pic2-details img, .women-pic3-details img {
+    width:100%;
+    height:60%;
+}
+
+  .add-to-cart img{
+    width:30%;
+    height:15%;
+    margin-left: 30%;
+}
+
+/*------------AboutUs-content--------------*/
+
+.About-Us-content img{
+    padding-left:28rem;
+    padding-top: 1rem;
+    min-height: 30rem;
+     width: 25rem;
+ 
+ }
+    
+ .About-Us-content h1, p{
+     text-align: center;
+   
+ }
+ 
+    
+ .focus{
+     font-weight: bold;
+     font-size: 1.25rem;
+ }
+ 
+    #important{
+        font-size: 0.938rem;
+        color:darkblue;
+        font-weight: bold;
+        margin:1.25rem;
+        padding: 3.125rem;
+    }
+ 
+     
+ .About-Us-content a{
+    margin-left: 100px;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    right:15px;
+    width: 80px;
+    height: 15px;
+    border: 1px solid black;
+    color:black;
+    background-color: red;
+    animation-name: color-fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+ }
+ 
+
+@keyframes color-fade{
+ from{
+     color:black;
+     
+ }
+ to{
+     color:white;
+ }
+}
+ 
+ /*------------Shop-Now-content--------------*/
+
+ .middle-image{
+    min-height: 75vh;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image:url(images/ShopNow.PNG);
+
+}
+
+.middle-image-content{
+    text-align: center;
+    width:90%;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.middle-image-content h1{
+    font-size: 45px;
+    color:yellow;
+    animation-name: color-fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-fade{
+        from{
+            color:white;
+            
+        }
+        to{
+            color:yellow;
+        }
+    }
+
+
+.link-btn1, .link-btn2{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    position:relative;
+    cursor: pointer;
+}
+
+.link-btn1{
+    border:1px solid red;
+    padding:12px;
+    font-size: 15px;
+    background:transparent;
+    margin-right: 10px;
+}
+  
+
+.link-btn2{
+    border:1px solid red;
+    padding:12px;
+    font-size: 15px;
+    background:transparent;
+}
+
+
+.link-btn1:hover{
+    border:1px solid white;
+    background: lightblue;
+    transition: 0.5s;
+
+}
+
+
+.link-btn2:hover{
+    border:1px solid white;
+    background: lightpink;
+    transition: 0.5s;
+
+}
+
+
+/*------------Terms & condition-content--------------*/
+
+h5{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+dt{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+dd{
+   font-size: 15px;
+}
+/*------------Privacy policy-content--------------*/ 
+main .PP section{
+    background-color: lightgrey;
+    border: 2px solid rgb(45 157 254);
+    height:370px;
+}
+/*------------contact Us-content--------------*/
+
+.Contact-Us {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: white;
+  }
+ 
+  .Contact-Us article {
+    border: 1px solid darkgray;
+    width:450px;
+    height:280px;
+    padding-left: 10px;
+    margin-left: 80px;
+    margin-right: 10px;
+  }
+
+.Email-Us, .Message-Us{
+    padding-top: 20px;
+}
+
+
+
+
+/*------------Track your-order-content--------------*/
+
+
+.tracking-order{
+    margin-top: 50px;
+}
+
+.track-your-content{
+    margin-bottom: 20px;
+}
+
+
+.track-your-content input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#trackbtn{
+    margin: 10px;
+    color:purple;
+    font-weight: bold;
+}
+
+.tracking-order p{
+    margin-right: 1010px;
+}
+/*------------Return & exchange-content--------------*/
+
+.items h6{
+    font-size: 20px;
+    border:1px solid  #aaa8a8;;
+    background-color: #ece8e8;
+    padding:15px;
+    width:22px;
+    margin-left: 600px;
+    border-radius: 50px;
+
+}
+
+.return-exchange h2{
+    margin-left: 460px;
+    text-decoration: underline;
+}
+
